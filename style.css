@@ -1,223 +1,213 @@
-*,
-*::before,
-*::after{
-    box-sizing:content-box;
+/* Reset default browser styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-:root{
-
-    --ff-primary:'source ans pro',sans-serif;
-    --ff-secondary:'source code pro',monospace;
-
-    --fw-reg:300;
-    --fw-bold:400;
-
-    --crl-light:white;
-    --crl-dark: #30303030;
-    --crl-accent: #16e0bd;
-
-    --fs-h1:2rem;
-    --fs-h2:2.5rem;
-    --fs-h3:1.25rem;
-    --fs-body:16px;
-
-
+/* Global styles */
+:root {
+  --primary-color: #333333;
+  --secondary-color: #666666;
+  --accent-color: #ff5500;
 }
 
-
-
-
-body{
-  
-
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color:white;
-  font-size: 16px;
-  line-height: 1.6;
-  margin:auto;
-  color: #000000;
-  color: var(--crl-dark);
-  font-family: var(--ff-primary);
-  background-color: var(--clr-dark);
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: var(--primary-color);
+  line-height: 1.5;
 }
-h1 {
-  font-size: var(--fs-h1);
-}
-h2 {
-  font-size: var(--fs-h2);
-}
-h3 {
-  font-size: 16px;
-}
+
 header {
-  position: fixed;
-  margin-top: -20px;
-  margin-right: 200px;
-  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color:beige;
-  color: black;
-}
-heder img{
-
-  height: 10px;
-  width: 10px;
-}
-.header1{
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-
-}
-#logo{
-  height: 50px;
-  width: 50px;
+  justify-content: center;
 }
 
-header a {
+nav ul li {
+  margin-right: 20px;
+}
 
-  color: orangered;
+nav ul li a {
+  color: var(--primary-color);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-
+  font-size: 14px;
 }
 
-
-header li {
-
-    float: left;
-  display: inline;
-  justify-content: space-around;
-  padding: 0 20px 0 20px;
-
-}
-
-
-
-#showcase {
-  padding-top: 6%;
-}
-
-.intro {
-
-  display: flex;
-  min-height: 640px;
-  align-items:center;
-  justify-content: center;
-  background-color:#fff;
-  color: #0000;
-
-}
-.text{
-  color: #000000;
-}
-
-
-
-
-
-.intro img {
-    width: 300px;
-    height:250px;
-    border-radius: 50%;
-}
-
-
-
-
-.Aboutus {
-  
-  justify-content: space-around;
-  display: flex;
-  min-height: 540px;
-  color:black;
-}
-
-
-.ab1{
-   
-   max-width: 30%;
-
-
-}
-
-
-.Aboutus img{
-
-  width: 250px;
-  height: 300px;
-}
-.service{
-  width: 100%;
- display: flex;
- justify-content: center;
- flex-direction: column;
-
-}
-.serv{
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  
-
-}
-.serviceimg{
-  min-width:400;
-  min-height: 300;
-  display: flex;
-  align-content:center;
-  justify-content: space-around;
-}
-
-.sara3{
-  color: #000000; 
+/* Hero section */
+#home {
+  padding: 100px 0;
   text-align: center;
-  
 }
 
-.sera{
-  padding: 50px;
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4400;
+}
+
+/* About section */
+#about {
+  background-color: #ffffff;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.profile img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Services section */
+#services {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.services-list {
   display: flex;
-  justify-content:space-between;
-  color: #000000;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  max-width: 80px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+}
+
+/* Portfolio section */
+#portfolio {
+  padding: 100px 0;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.portfolio-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  font-size: 16px;
+}
+
+/* Contact section */
+#contact {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
   width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
-
-
-.sara1{
-  background-color: #30303030;
-  max-width: 20%;
-
+form button {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.sara2{
-  max-width:40%;
+The above CSS code includes styling improvements for the various sections of your portfolio website. Here are some key changes:
 
-}
-.service img{
-  min-width: 700px;
-  min-height: 300px;
-}
+- Added global styles to reset default browser styles and define variables for primary, secondary, and accent colors.
+- Applied styles to the `<header>` and navigation links to improve the header's appearance.
+- Styled the hero section (`#home`) with centered text and enhanced the call-to-action button.
+- Updated the styles for the "About Me" section (`#about`) and the profile picture.
+- Improved the layout and styling of the "Services" section (`#services`).
+- Enhanced the layout and appearance of the "Portfolio" section (`#portfolio`) with a grid layout and improved image display.
+- Styled the "Contact Me" section (`#contact`) and the contact form for better user experience.
+- Adjusted section paddings and background colors to create visual separation between sections.
 
-
-
-.contactme{
-
-background-color: #fff;
-color: #000000;
-
-}
-
-
-
-.foot{
-  min-height: 50px;
-  background-color:beige;
-  color:black;
-}
+Feel free to customize the colors, fonts, and other aspects of the CSS code to match your desired design preferences.
