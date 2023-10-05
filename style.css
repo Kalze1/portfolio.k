@@ -1,213 +1,250 @@
-/* Reset default browser styles */
-*, *::before, *::after {
+/* Global Styles */
+* {
   box-sizing: border-box;
+ }
+ 
+ body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-/* Global styles */
-:root {
-  --primary-color: #333333;
-  --secondary-color: #666666;
-  --accent-color: #ff5500;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: var(--primary-color);
-  line-height: 1.5;
-}
-
-header {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
+ }
+ 
+ /* Header Styles */
+ .header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: left;
+ }
+ 
+ .header h1 {
+  margin: 0;
+ }
+ 
+ /* Navigation Styles */
+ nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+ }
+ 
+ .column {
+  flex: 100%;
+ }
+ 
+ nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+ }
+ 
+ nav li {
+  margin-right: 1em;
+ }
+ 
+ nav a {
+  color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-/* Hero section */
-#home {
-  padding: 100px 0;
+ }
+ 
+ nav a:hover {
+  background-color: #666;
+ }
+ 
+ /* Main Content Styles */
+ main {
+  background-color: #f2f2f2;
+  padding: 1em;
+ }
+ 
+ main section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1em;
+  padding: 1em;
+ }
+ 
+ main section h2 {
+  margin-top: 0;
+ }
+ 
+ main section p {
+  margin-bottom: 1em;
+ }
+ 
+ /* Footer Styles */
+ footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #ff4400;
-}
-
-/* About section */
-#about {
-  background-color: #ffffff;
-  padding: 100px 0;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-#about h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-.profile img {
-  border-radius: 50%;
-  max-width: 200px;
-  margin-bottom: 20px;
-}
-
-/* Services section */
-#services {
-  padding: 100px 0;
-  background-color: #f5f5f5;
-}
-
-.services-list {
+ }
+ 
+ footer p {
+  margin-bottom: 0;
+ }
+ 
+ /* About Me Styles */
+ .about-me {
+  background-color: #f2f2f2;
+  padding: 1em;
+ }
+ 
+ .about-content {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.service {
-  width: 300px;
-  padding: 20px;
-  background-color: #ffffff;
-  margin: 20px;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.service img {
-  max-width: 80px;
-  margin-bottom: 20px;
-}
-
-.service h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.service p {
-  font-size: 16px;
-}
-
-/* Portfolio section */
-#portfolio {
-  padding: 100px 0;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.portfolio-item {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.portfolio-item h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.portfolio-item p {
-  font-size: 16px;
-}
-
-/* Contact section */
-#contact {
-  padding: 100px 0;
-  background-color: #f5f5f5;
-}
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-form input,
-form textarea {
+  justify-content: space-between;
+ }
+ 
+ .left-content {
+  flex: 100%;
+ }
+ 
+ .right-content {
+  flex: 100%;
+ }
+ 
+ .about-heading {
+  margin-top: 0;
+ }
+ 
+ .skills {
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .skills-heading {
+  margin-top: 0;
+ }
+ 
+ .skills-bar {
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .bar {
+  flex: 100%;
+ }
+ 
+ .info {
+  margin-bottom: 1em;
+ }
+ 
+ .progress-line {
+  margin-bottom: 1em;
+ }
+ 
+ .html {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-}
-
-form button {
-  padding: 10px 20px;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-The above CSS code includes styling improvements for the various sections of your portfolio website. Here are some key changes:
-
-- Added global styles to reset default browser styles and define variables for primary, secondary, and accent colors.
-- Applied styles to the `<header>` and navigation links to improve the header's appearance.
-- Styled the hero section (`#home`) with centered text and enhanced the call-to-action button.
-- Updated the styles for the "About Me" section (`#about`) and the profile picture.
-- Improved the layout and styling of the "Services" section (`#services`).
-- Enhanced the layout and appearance of the "Portfolio" section (`#portfolio`) with a grid layout and improved image display.
-- Styled the "Contact Me" section (`#contact`) and the contact form for better user experience.
-- Adjusted section paddings and background colors to create visual separation between sections.
-
-Feel free to customize the colors, fonts, and other aspects of the CSS code to match your desired design preferences.
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+ }
+ 
+ .css {
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+ }
+ 
+ .bootstrap {
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+ }
+ 
+ .javascript {
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+ }
+ 
+ .c {
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+ }
+ 
+ .work-arrow {
+  margin-top: 1em;
+ }
+ 
+ .work-arrow-2 {
+  margin-top: 1em;
+ }
+ 
+ /* Portfolio Styles */
+ .portfolio {
+  background-color: #f2f2f2;
+  padding: 1em;
+ }
+ 
+ .proj-heading {
+  margin-top: 0;
+ }
+ 
+ .portfolio-content {
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .proj-1 {
+  flex: 100%;
+ }
+ 
+ .proj1-details {
+  margin-top: 1em;
+ }
+ 
+ .proj2-details {
+  margin-top: 1em;
+ }
+ 
+ .proj-2 {
+  flex: 100%;
+ }
+ 
+ .more-work {
+  margin-top: 1em;
+ }
+ 
+ .proj1-details button {
+  margin-top: 1em;
+ }
+ 
+ .proj2-details button {
+  margin-top: 1em;
+ }
+ 
+ /* Contact Styles */
+ .contact {
+  background-color: #f2f2f2;
+  padding: 1em;
+ }
+ 
+ .contact-content {
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .contact-heading {
+  margin-top: 0;
+ }
+ 
+ .mail {
+  margin-top: 1em;
+ }
+ 
+ .links {
+  margin-top: 1em;
+ }
+ 
+ .links a {
+  margin-right: 1em;
+ }
