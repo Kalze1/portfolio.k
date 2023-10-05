@@ -1,105 +1,235 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="author" content="Kaleab Zegeye">
+    <title>Kalab Web Deisgn</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home">
-    <div class="hero">
-      <h1>Welcome to Your Portfolio</h1>
-      <p>Your introduction or tagline goes here</p>
-      <a href="#contact" class="cta-button">Contact Me</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="profile">
-        <img src="profile-picture.jpg" alt="Your Name">
-        <p>Your bio or summary goes here</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2>Services</h2>
-      <div class="services-list">
-        <div class="service">
-          <img src="service-icon-1.png" alt="Service 1">
-          <h3>Service 1</h3>
-          <p>Service 1 description goes here</p>
+<body >
+    <header id="header">
+        
+        <div class="header1">
+           <img id="logo" src="images/logo.jpg" alt="logo @K">
+           <h1>Kaleab </h1>
         </div>
-        <div class="service">
-          <img src="service-icon-2.png" alt="Service 2">
-          <h3>Service 2</h3>
-          <p>Service 2 description goes here</p>
-        </div>
-        <div class="service">
-          <img src="service-icon-3.png" alt="Service 3">
-          <h3>Service 3</h3>
-          <p>Service 3 description goes here</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div id="tlink">
+            <nav>
+                <ul>
+                    <li><a href="#showcase">Home</a></li>
+                    <li><a href="#Aboutus">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>      
+    </header>
 
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="portfolio-item-1.jpg" alt="Portfolio Item 1">
-          <h3>Project 1</h3>
-          <p>Project 1 description goes here</p>
-        </div>
-        <div class="portfolio-item">
-          <img src="portfolio-item-2.jpg" alt="Portfolio Item 2">
-          <h3>Project 2</h3>
-          <p>Project 2 description goes here</p>
-        </div>
-        <div class="portfolio-item">
-          <img src="portfolio-item-3.jpg" alt="Portfolio Item 3">
-          <h3>Project 3</h3>
-          <p>Project 3 description goes here</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form action="submit.php" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section id="showcase">
+        <div class="intro">
+            <div class="text">
+                <h1 id="name1">Hi, I am <strong>Kaleab Zegeye</strong></h1> 
+                <h3>Web Developer </h3>
+            </div>
+                <img src="images/AA.jpg" alt="photo"> 
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+    <section id="Aboutus">
+        <div class="Aboutus">
+            <div class="ab1">
+                <h2>About Me</h2>
+                <h3>Freelancing Web Devloper</h3>
+                <p>I'm here to build a Website and mobile Application for you. Using the
 
+                    leading-edge software development technologies.
+                    
+                    Your software will be unique in looking, fast and user 
+                    
+                    friendly.
+                    
+                </p>
+                <h3>Why choose me:</h3>
+                <ul>
+                    <li><p>100% satisfaction guarantee.</p></li>
+                    <li><p>100% Money back guarantee.</p></li>
+                    <li><p>Live preview before delivery.</p></li>
+                    <li><p>I will deliver you on time with full satisfaction</p></li>
+                    <li><p>Frequently update and unlimited revision.</p></li>
+                </ul>
+
+            </div>
+            <div  class="ab2">
+                <h3>Frontend:</h3>
+                <ul>
+                    <li><p>HTML/CSS</p></li>
+                    <li><p>React Bootstrap / Bootstrap</p></li>
+                    <li><p>Javascript</p></li>
+                </ul>
+                <h3>Backend:</h3>
+                <ul>
+                    <li><p>PHP</p></li>
+                    <li><p>Node.js</p></li>
+                    <li><p>Javascript</p></li>
+                </ul>
+                <h3>APP:</h3>
+                <ul>
+                    <li><p>Java</p></li>
+                    <li><p>Pythone</p></li>
+                    <li><p>Javascript</p></li>
+                </ul>
+                <h3>Database:</h3>
+                <ul>
+                    <li><p>MySql</p></li>
+                    <li><p>MongoDB</p></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="Services">
+        <div class="serr">
+            <div class="serv">
+                <div class="sara3">
+                    <h2>MY SERVICES</h2>
+                </div>
+                <div class="serviceimg">
+                    <div class="saraimg">
+                        <img src="images/ser11.jpeg" alt="service">
+                    </div>
+                    <div class="saraimg">
+                        <img src="images/ser2.jpeg" alt="service">
+                    </div>
+                </div>
+    
+                
+            </div> 
+    
+            <div class="service">
+               
+                
+                <div>
+                    <div class="sara3">
+                        <h2>Website Development</h2>
+                    </div>
+                    <div class="sera">
+                        <div class="sera1">
+                            <p>Are you looking for someone to build a professional looking eye catchy website for your
+
+                                Bussiness,
+                                
+                                Factory,
+                                
+                                Company,
+                                
+                                Warehouse,
+                                
+                                or Other Projects.
+                                
+                                then you are at right place.
+                                
+                                
+                                
+                                I am a Professional Front-End and Back-End Developer.
+                                
+                                I have earned a lot of experience in developing php web applications.
+                                
+                                I can develop Fully Functional PHP Web Applications with Reports OR a Client Website with professional database architecture.</p>
+                        </div>
+                        <div class="sera2">
+                            <img src="images/web1.jpeg" alt="ldcl;c,">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h2 class="sara3">Mobil App Devlopment</h2>
+                    <div class="sera">
+                        <div class="sera1">
+                            <p>Planning to build a feature-rich mobile application? I am dedicated for your commercial grade, mid to large scale projects. I use leading-edge technologies and tools to deliver you interactive and robust mobility solutions which save up to 60% of your development cost.</p>
+                        </div>
+                        <div class="sera2">
+                            <img src="images/ma.jpeg" alt="ldcl;c,">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="sara3">
+                        <h2>Website Maintenance</h2>
+                    </div>
+                    <div class="sera">
+                        <div class="sera1">
+                            <p>Website maintenance is the act of regularly checking your website for issues and mistakes and keeping it updated and relevant or rebuild agian. This should be done on a consistent basis in order to keep your website healthy, encourage continued traffic growth, and strengthen your SEO and Google rankings.</p>
+                        </div>
+                        <div class="sera2">
+                            <img src="images/webm.jpeg" alt="ldcl;c,">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h2 class="sara3">Portfolio Design</h2>
+                    <div class="sera">
+                        <div class="sera1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aut libero pariatur a deleniti exercitationem officiis eum vero earum ex!</p>
+                        </div>
+                        <div class="sera2">
+                            <img src="images/por.jpg" alt="ldcl;c,">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div>
+                    <h2 class="sara3">Technical Support</h2>
+                    <div class="sera">
+                        <div class="sera1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aut libero pariatur a deleniti exercitationem officiis eum vero earum ex!</p>
+                        </div>
+                        <div class="sera2">
+                            <img src="images/tech.jpg" alt="ldcl;c">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+ 
+        
+    </section>
+
+    <div class="contactme" id="contactme">
+        <h2>Contact Me</h2>
+        <h3>Address:</h3>
+        <a href="map:adama,ethiopia">Ethiopia,Adama</a>
+        <h3>Phone:</h3>
+        <a href="tel:+251910402038">+251910402038</a>
+        <h3>Email:</h3>
+        <a href="mailto:kaleabzegeye1@gmail">kaleabzegeye1@gmail</a>
+        
+</div>
+
+    
+</section> 
+
+    <FOOter>
+
+        <div class="foot">
+            <P>Kal web design ,copyright &copy; 2022  All rights reserved.</P>
+        </div>
+    </FOOter>
 </body>
+
 </html>
